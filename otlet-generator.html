@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=dévice-width  initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="snow.css" />
   </head>
   <header>
     <div class="header-line">
       <div class="header-items">
         <a href="index.html">Történet</a>
-        <a href="">Díszítési formák</a>
+        <a href="diszites.html">Díszítési formák</a>
         <a href="">Ötlet generátor</a>
       </div>
     </div>
@@ -40,19 +40,56 @@
         <div class="container-title">
           <h1>Ötlet generátor</h1>
         </div>
-        <div class="gender">
+        <h2>Add meg az ajándékozott nemét</h2>
+        <div class="gender" id="gender-select">
           <div class="container-items">
-            <div class="fiu">
-              <button type="submit">Fiú</button>
+            <div class="fiu" id="fiu">
+              <label for="fiu-button">Fiú</label>
+              <input
+                type="checkbox"
+                name="fiu"
+                id="fiu-button"
+                onclick="genderChange('fiu-button', 'lany-button')"
+              />
             </div>
           </div>
           <div class="container-items">
-            <div class="lany">
-              <button type="submit">Lány</button>
+            <div class="lany" id="lany">
+              <label for="lany-button">Lány</label>
+              <input
+                type="checkbox"
+                name="lany"
+                id="lany-button"
+                onclick="genderChange('lany-button', 'fiu-button')"
+              />
             </div>
           </div>
         </div>
+        <h2>Add meg az ajándékozott korát</h2>
+        <div class="age">
+          <div class="container-items">
+            <select name="age" id="age">
+              <option value="0-4">0-4 év</option>
+              <option value="4-12">4-12 év</option>
+              <option value="12-16">12-16 év</option>
+              <option value="16-18">16-18 év</option>
+              <option value="18+">18+ év</option>
+            </select>
+          </div>
+        </div>
+        <div class="submit">
+          <button type="submit" id="submit">Generál</button>
+        </div>
+        <h2>Ötlet:</h2>
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="button-container">
+        <a href="diszites.html">Előző</a>
+        <a href="index.html">Kezdőlap</a>
       </div>
     </div>
   </body>
+  <script src="otlet.js"></script>
 </html>

@@ -1,27 +1,11 @@
 @keyframes snow {
   0% {
     transform: scale(0.4);
-    transform: translateY(-100vh);
-  }
-  90% {
-    transform: scale(1.1);
-    transform: translateY(89vh);
+    transform: translateY(-100%);
   }
   100% {
-    opacity: 0;
-  }
-}
-
-@keyframes snow {
-  0% {
-    transform: scale(0.4);
-    transform: translateY(-100vh);
-  }
-  90% {
     transform: scale(1.1);
-    transform: translateY(89vh);
-  }
-  100% {
+    transform: translateY(100vh);
     opacity: 0;
   }
 }
@@ -143,9 +127,28 @@
   flex-direction: row;
   justify-self: center;
   gap: 20px;
-  z-index: -1;
   cursor: default;
   user-select: none;
   color: white;
   font-size: 2.3em;
+}
+@media screen and (max-width: 1500px) {
+  .snow:nth-child(16),
+  .snow:nth-child(15),
+  .snow:nth-child(14),
+  .snow:nth-child(13),
+  .snow:nth-child(12),
+  .snow:nth-child(11),
+  .snow:nth-child(10),
+  .snow:nth-child(9),
+  .snow:nth-child(8) {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .snow:nth-child(7),
+  .snow:nth-child(6),
+  .snow:nth-child(5) {
+    display: none;
+  }
 }
