@@ -232,11 +232,11 @@ label {
 }
 
 .animation {
-  animation: animation 1.4s;
+  animation: animation 1.1s;
   opacity: 1;
 }
 .animation2 {
-  animation: animation2 1.4s;
+  animation: animation2 1.1s;
   opacity: 1;
 }
 
