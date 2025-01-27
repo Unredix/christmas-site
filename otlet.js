@@ -34,7 +34,7 @@ function genderChange(button1, button2) {
 function getAge() {
   let age = document.getElementById("age");
   if (age.value == "") {
-    alert("Add meg az ajánkékozott korát!");
+    alert("Add meg az ajándékozott korát!");
   }
   return age.value;
 }
@@ -47,7 +47,7 @@ function presentSelect(gender, age) {
   const output = document.getElementById("result");
   const randomNum = Math.floor(Math.random() * 20);
   if (!gender) {
-    alert("Add meg az ajánkékozott nemét!");
+    alert("Add meg az ajándékozott nemét!");
   }
   if (gender == "fiu") {
     if (age == "") {
